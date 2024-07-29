@@ -59,32 +59,10 @@ function page({ params }) {
           height={720}
           alt=""
         />
-        <h1 className="my-9 text-[26px] font-semibold">Introduction</h1>
-        <p>{data.description}</p>
-        <h3 className="my-5 text-[18px] font-semibold">Bol yürüyüş yapın.</h3>
-        <p className="my-3">
-          Düzenli yürüyüş kan basıncını dengeler ve kalp-damar hastalıklarının
-          risklerini düşürür. Yapılan araştırmalara göre haftada en az 3 gün
-          düzenli yürüyüş yapan kadınlarda kalp hastalığı riski azalmıştır.
-          Kemikleri güçlendirir ve omurga sağlığını destekler. Eklem ağrılarını
-          ve iltihaplarını azaltır.
-        </p>
-        <h3 className="my-5 text-[18px] font-semibold">Bol yürüyüş yapın.</h3>
-        <p className="my-3">
-          Düzenli yürüyüş kan basıncını dengeler ve kalp-damar hastalıklarının
-          risklerini düşürür. Yapılan araştırmalara göre haftada en az 3 gün
-          düzenli yürüyüş yapan kadınlarda kalp hastalığı riski azalmıştır.
-          Kemikleri güçlendirir ve omurga sağlığını destekler. Eklem ağrılarını
-          ve iltihaplarını azaltır.
-        </p>
-        <h3 className="my-5 text-[18px] font-semibold">Bol yürüyüş yapın.</h3>
-        <p className="my-3">
-          Düzenli yürüyüş kan basıncını dengeler ve kalp-damar hastalıklarının
-          risklerini düşürür. Yapılan araştırmalara göre haftada en az 3 gün
-          düzenli yürüyüş yapan kadınlarda kalp hastalığı riski azalmıştır.
-          Kemikleri güçlendirir ve omurga sağlığını destekler. Eklem ağrılarını
-          ve iltihaplarını azaltır.
-        </p>
+        <div
+          className="blog-content"
+          dangerouslySetInnerHTML={{ __html: data.description }}
+        ></div>
         <div className="my-24">
           <p className="text-black font-semibold my-4">
             Bloğunuzu sosyal medyada paylaşabilirsiniz.
